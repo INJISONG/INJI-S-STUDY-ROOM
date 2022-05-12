@@ -1,0 +1,234 @@
+/* 메인 */
+.mainbanner{
+    height: 653px;
+    background: url(../img/main/mainbanner1.png) no-repeat center / cover;
+    text-indent: -9999px;
+    font-size: 0;
+}
+/* 뉴 */
+.product-new{
+    background-color: #fffef2;
+    
+    padding-bottom: 120px;
+}
+.product-new .new-inner{
+    width: 1230px;
+    margin: auto;
+}
+.product-new h2{
+    font-family: Philosopher;
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 1.13;
+    text-align: center;
+    color: #464646;
+    padding-top: 120px;
+}
+.product-new li{
+    float:left;
+    padding-right: 15px;
+    padding-top: 46px;
+}
+.product-new li:last-child{
+    padding-right: 0;
+}
+.product-new li p{
+    text-align: center;
+    font-family:  NotoSansCJKkr;
+    margin-top: 20px;
+}
+.product-new li p:first-child{
+    font-size: 14.7px;
+    line-height: 21px;
+    color: #333;
+    
+}
+
+.product-new li span{
+    font-size: 12px;
+}
+.product-new li p:last-child{
+    font-size: 13px;
+    padding-top:8.5px;
+    color: #666
+}
+/* 베스트 */
+.product-best{
+    background-color: #465a4f;    
+    padding-bottom: 120px;
+}
+.product-best .best-inner{
+    width: 1230px;
+    margin: auto;
+    text-align: center;
+}
+.product-best h2{
+    font-family: Philosopher;
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 1.13;
+    text-align: center;
+    color: #fffffa;
+    padding-top: 120px;
+}
+.product-best li{
+    float:left;
+    padding-right: 15px;
+    padding-top: 46px;
+}
+.product-best li:last-child{
+    padding-right: 0;
+}
+.product-best li p{
+    text-align: center;
+    font-family: NotoSansCJKkr;
+    margin-top: 20px;
+    font-size: 18px;
+    line-height: 21px;
+    color: #fffffa;
+}
+.product-best .star{
+    margin-top: 15px;
+}
+/* 차별점 */
+.product-different{
+    background-color: #fffef2;
+    padding-bottom: 120px;
+}
+.product-different .dif-inner{
+    width: 1280px;
+    margin: auto;
+}
+.product-different h2{
+    font-family: Philosopher;
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 1.13;
+    text-align: center;
+    color: #666;
+    padding-top: 120px;
+}
+.product-different ul li{
+    float: left;
+    padding-right: 90px;
+    padding-top: 120px;
+}
+.product-different li p{
+    font-family: NotoSansCJKkr;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.75;
+    letter-spacing: normal;
+    text-align: center;
+    color: #666;
+    margin-top: 20px;   
+}
+.product-different ul li:last-child{
+    padding-right: 0;
+}
+
+
+/* 스토어 */
+.store{
+    width: 655px;
+    background-color: #f8f6e5;
+    position: relative;
+    display:none;
+}
+.store .inner{
+    width: 1280px;
+    margin: auto;
+    z-index: 1000;
+    position: relative;
+}
+.store .right-bg{
+    width: 50px;
+    height: 655px;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    background-color: #f3f2e9;
+}
+.store .store-left{
+    width: 50%;
+    height: 655px;
+    float: left;
+    padding-top: 128px;
+    box-sizing: border-box;
+    padding-left: 37px;
+}
+.store .store-left h2{
+    font-family: Philosopher;
+  font-size: 40px;
+  font-weight: bold;
+}
+.store .store-left p:nth-of-type(1){
+    font-family: NotoSansCJKkr;
+  font-size: 38.7px;
+  font-weight: bold;
+  line-height: 1.84px;
+  text-align: center;
+  color: #333;
+  margin-top: 54px;
+}
+.store .store-left p:nth-of-type(2){
+    font-family: NotoSansCJKkr;
+    font-size: 18px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.17;
+    letter-spacing: normal;
+    text-align: left;
+    color: #666;
+    margin-top: 54px;
+}
+.store .store-left p:nth-of-type(3){
+    font-family: NotoSansCJKkr;
+    font-size: 21.1px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.71;
+    letter-spacing: normal;
+    text-align: left;
+    color: #666;
+    margin-top: 54px;
+}
+.store .store-left .new-store-more{
+    display: block;
+    width: 220px;
+    height: 60px;
+    color: #fff;
+    font-size: 14px;
+    line-height: 60px;
+    text-align: center;
+    background-color: #465a4f;
+    margin-top: 79px;
+    margin-left: 146px;
+
+}
+.store .store-right{
+    width: 50%;
+    height: 655px;
+    float: left;
+    padding-left: 58px;
+    padding-top: 69px;
+    box-sizing: border;
+}
+.store .store-right .slide-control{
+    margin-top: 46px;
+    margin-left: 15px;}
+.store .store-right .slide-control button{
+    float: left;
+    text-indent: -9999px;
+    font-size: 0;
+    width: 49px;
+    height: 15px;}
+.store .store-right .slide-prev-btn{
+    background: url(../img/main/prev-arrow.png) no-repeat;
+    margin-right: 44px;}
+.store .store-right .slide-next-btn{
+    background: url(../img/main/next-arrow.png) no-repeat;}
