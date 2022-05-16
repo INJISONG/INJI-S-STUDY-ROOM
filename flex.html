@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .container{
+        width: 800px;
+        height: 800px;
+        border: 1px solid #f90;
+        margin: 10px;
+        background-color: antiquewhite;
+         }
+    .container1{
+        display: flex; 
+        flex-direction: row;
+        flex-wrap: nowrap;
+    } 
+    .container1>div.box1{
+        align-self:flex-start;
+    }
+    .container2{
+        display: flex; 
+        flex-direction: row-reverse;
+    } 
+    .container3{
+        display: flex; 
+        flex-direction: column;
+        justify-content: flex-end;
+    } 
+    .container4{
+        display: flex; 
+        flex-direction: column-reverse;
+    } 
+
+    .container>div{
+        width: 100px;
+        height: 100px;
+    }
+    .box1{background-color: #ccc;}
+    .box2{background-color: #c33;}
+    .box3{background-color: #fff23f;}
+    .box4{background-color: greenyellow;}
+    .box5{background-color: #fff;}
+
+    </style>
+</head>
+<body>
+    <div class="container1 container">
+        <div class="box1">박스1</div>
+        <div class="box2">박스2</div>
+        <div class="box3">박스3</div>
+        <div class="box4">박스4</div>
+        <div class="box5">박스5</div>
+    </div>
+    <div class="container2 container">
+        <div class="box1">박스1</div>
+        <div class="box2">박스2</div>
+        <div class="box3">박스3</div>
+    </div>
+    <div class="container3 container">
+        <div class="box1">박스1</div>
+        <div class="box2">박스2</div>
+        <div class="box3">박스3</div>
+        <div class="box4">박스4</div>
+        <div class="box5">박스5</div>
+    </div>
+    <div class="container4 container">
+        <div class="box1">박스1</div>
+        <div class="box2">박스2</div>
+        <div class="box3">박스3</div>
+    </div>
+    
+</body>
+</html>

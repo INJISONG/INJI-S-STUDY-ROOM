@@ -1,0 +1,20 @@
+.big-screen-text{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10000;
+    background-color: #ffe94e;
+    font-weight: 600;
+    font-size: 30px;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    color: #523737;
+
+}
+@media screen and (min-width: 530px){
+    .big-screen-text{display: flex;}
+ 
+}

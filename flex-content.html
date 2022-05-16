@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrap{
+            width: 300px;
+            height: 300px;
+            border: 1px solid #f90;
+            margin: 10px;
+            background-color: antiquewhite;
+            display: flex;
+            flex-wrap: wrap;
+
+     }
+    .wrap>div{
+        flex:0 0 100px;
+        height: 100px;
+    }
+    .wrap>div:nth-child(1){background-color: red; order:0}
+    .wrap>div:nth-child(2){background-color: yellow; order:1}
+    .wrap>div:nth-child(3){background-color: greenyellow; order:4}
+    .wrap>div:nth-child(4){background-color: blue; order:2}
+    .wrap>div:nth-child(5){background-color: violet; order:3}
+    
+    .wrap1{align-content: space-around;}
+    .wrap2{align-content: flex-start;}
+    .wrap3{align-content: flex-end;}
+    .wrap4{align-content: center;}
+    .wrap5{align-content: space-between;}
+/* align */
+/* flex 속성 */
+        .wrap21{    
+            width: 600px;
+            height: 40px;
+            background-color: #f90;
+            display: flex; }
+            .wrap21>div{width: 100px;}
+            .wrap21>div:nth-child(1){background-color: yellow; flex-grow: 4;}/* 600/6*4 */
+            .wrap21>div:nth-child(2){background-color: #c9f; flex-grow: 1;}
+            .wrap21>div:nth-child(3){background-color: #f42; flex-grow: 1;}
+            
+            .wrap22{
+                display: flex;
+                width: 600px;
+                height: 40px;
+                margin-top: 50px;
+                background-color: #333;
+            }
+            .wrap22>div{width: 300px;}
+            .wrap22>div:nth-child(1){background-color: yellow; flex-shrink: 3;}/* 300+(-300/5)*3= 120 */
+            .wrap22>div:nth-child(2){background-color: #c9f; flex-shrink: 1;}/* 300+(-300/5)*1=240 */
+            .wrap22>div:nth-child(3){background-color: #f42; flex-shrink: 1;}/* 300+(-300/5)*1=240 */
+           
+            .wrap23{
+                display: flex;
+                width: 600px;
+                height: 40px;
+                margin-top: 50px;
+                background-color: #333;
+            }
+            .wrap23>div{width: 400px;}
+            .wrap23>div:nth-child(1){background-color: yellow; flex-shrink: 3;}/* 400-(600/5)*3=40 */
+            .wrap23>div:nth-child(2){background-color: #c9f; flex-shrink: 1;}/*  400-(600/5)*1= 280*/
+            .wrap23>div:nth-child(3){background-color: #f42; flex-shrink: 1;}/*  400-(600/5)*1= 280*/
+          /*   .wrap23>div:nth-child(1){background-color: yellow; flex-shrink: 2;}=0
+            .wrap23>div:nth-child(2){background-color: #c9f; flex-shrink: 1;} =200
+            .wrap23>div:nth-child(3){background-color: #f42; flex-shrink: 0;} = 400 */
+            
+            .wrap24{
+                display: flex;
+                width: 600px;
+                height: 40px;
+                margin-top: 50px;
+                background-color: #333;
+            }
+            .wrap24>div{flex-basis: 300px;}
+            .wrap24>div:nth-child(1){background-color: yellow;}
+            .wrap24>div:nth-child(2){background-color: #c9f; }
+            .wrap24>div:nth-child(3){background-color: #f42; }
+            
+</style>
+</head>
+<body>
+    <!-- div.wrap.wrap$*5>div*5 -->
+    <div class="wrap wrap1">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <div class="wrap wrap2">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <div class="wrap wrap3">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <div class="wrap wrap4">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <div class="wrap wrap5">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <div class="wrap21">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+    <div class="wrap22">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+    <div class="wrap23">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+    <div class="wrap24">
+        <div class="box">박스맨</div>
+        <div class="box">박스2번맨</div>
+        <div class="box">박</div>
+    </div>
+</body>
+</html>
