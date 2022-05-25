@@ -1,0 +1,168 @@
+@import url(./reset.css);
+/* .wrap{
+    width:1960px;
+} */
+/* header */
+.wrap{
+    display: flex;
+    flex-direction: column;
+    
+}
+header{position:relative;}
+
+.gnb{
+    position:relative;
+    z-index: 2000;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 50px;
+    align-items: center;
+}
+.header1>ul{
+    display: flex;
+    width: 100%;
+    color:#fff;
+
+}
+.header1>ul>li{padding-right: 30px;    
+    flex: 0 0 auto;/* flex 넓히는건 0 쉬링크 0으로 주어야 화면 줄어들어도 안줄어듬 */
+  
+   }
+.header2 img{
+    width: 250px;
+    
+}
+.header3>ul{
+    display: flex;    
+    color:#fff;
+}
+.header3>ul>li{padding-right: 30px;  flex: 0 0 auto;}
+#lang{
+    background-color: transparent; /* 배경 투명하게 해줌 */
+    border: none;
+    color:#fff;
+}
+
+/* main */
+.main{
+    height: 100%;
+}
+.main-container{
+    position: absolute;
+    left:0;
+    top:0;
+    display: flex; 
+    
+}
+.main-img-left{ 
+   flex: 0 0 50%;
+   position: relative;
+   filter: brightness(80%);
+}
+.main-img-left>img{
+    width:100%;
+} 
+
+/* 이미지 값이 안들어가있어서 반으로 안나옴 ㅡㅡ
+object fit 무엇인가 감싸고 있는걸 플랙스 50%*/
+.main-img-right{flex: 50%;
+    object-fit: cover;
+    object-position: bottom;}
+
+.main-img-right>video{
+    flex: 100%;
+    width: 100%;
+    height: 100%; 
+}
+/* 동영상 너무 큰거 해결하기 */
+/* 센터 박스 캔들보기 */
+.center{
+    position: absolute;
+    top: 80%;
+    right: 40%;
+    color:#fff;
+
+}
+.center>h2{
+    text-align: center;
+    font-size: 16px;
+}
+.little{font-size: 30px;}
+
+.center-title{
+    font-size: 44px;
+    font-weight: bold;
+    text-align: center;
+}
+.center-btn{
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+    width: 300px;
+    height: 100px;
+    display: block;
+    line-height: 100px;
+    border: 1px solid #fff;
+    margin: auto;
+    margin-top: 30px;
+    
+}
+
+/* footer 위로 올라오는거 어떻게 해결했는지? */
+address{
+    font-style: normal;
+ margin-top: 1300px;
+ margin-bottom: 30px;
+    text-align: center;
+    color: #999;
+    line-height: 25px;
+    
+}
+.footer-bottom{
+    margin-top: 20px;
+    text-align: center;
+    color: #999;
+}
+
+/* chat-bot */
+.chat-btn{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: black;
+    position: fixed;
+    right: 100px;
+    bottom: 100px;
+    
+}
+.chatbot{
+    width: 400px;
+    height: 600px;
+    background-color: rgb(238, 218, 255);
+   display: none;
+    position: fixed;
+    right: 100px;
+    bottom: 200px;
+    border-radius: 24px;
+}
+.chat-btn:hover+.chatbot{
+    display: block;
+}
+
+/* 미디어쿼리 */
+
+@media screen and (min-width:120px) and (max-width: 1200px) {
+   .main-container{
+       display: flex;
+       flex-wrap: wrap;}
+    .main-img-left{flex: 0 0 100%;}
+   .head-li,.head-li>li,.chat-btn{display: none;}
+   .header1{ background: url('./tamb/sprite__common.png') no-repeat -505px -83px;
+	width: 50px;
+	height: 36px;}
+    .header3>ul>li{font-size: 20px;}
+    .center{position: absolute;
+        top: 50%;
+        left: 25%;}
+}
+    
